@@ -442,7 +442,6 @@ button {
     padding-top: 0.75rem;
   }
 
-  .site-header,
   .site-footer,
   .section-heading,
   .hero-grid,
@@ -450,11 +449,62 @@ button {
     grid-template-columns: 1fr;
   }
 
-  .site-header,
-  .site-footer,
-  .header-controls {
+  .site-footer {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .site-header {
+    align-items: flex-start;
+  }
+
+  .brand {
+    max-width: min(14rem, 48vw);
+    min-width: 0;
+    flex: 1 1 auto;
+  }
+
+  .header-controls {
+    margin-left: auto;
+    flex: 0 0 auto;
+    gap: 0.45rem;
+  }
+
+  .locale-switch {
+    padding: 0.15rem;
+  }
+
+  .locale-link {
+    min-width: 2.35rem;
+    min-height: 2rem;
+    padding: 0 0.65rem;
+    font-size: 0.64rem;
+    letter-spacing: 0.14em;
+  }
+
+  .theme-toggle {
+    gap: 0.45rem;
+    min-height: 2.35rem;
+    padding: 0.15rem 0.3rem 0.15rem 0.65rem;
+  }
+
+  .theme-toggle-track {
+    width: 2.45rem;
+    padding: 0.15rem;
+  }
+
+  .theme-toggle-thumb {
+    width: 0.95rem;
+    height: 0.95rem;
+  }
+
+  :root[data-theme="dark"] .theme-toggle-thumb {
+    transform: translateX(1.15rem);
+  }
+
+  .theme-toggle-label {
+    font-size: 0.68rem;
+    letter-spacing: 0.06em;
   }
 
   .hero {
@@ -473,6 +523,33 @@ button {
 
   .manifesto-item-wide {
     grid-column: auto;
+  }
+}
+
+@media (max-width: 32rem) {
+  .site-header {
+    gap: 0.75rem;
+  }
+
+  .brand {
+    max-width: min(12rem, 44vw);
+  }
+
+  .header-controls {
+    gap: 0.35rem;
+  }
+
+  .locale-link {
+    min-width: 2.1rem;
+    padding: 0 0.55rem;
+  }
+
+  .theme-toggle {
+    padding-left: 0.5rem;
+  }
+
+  .theme-toggle-label {
+    font-size: 0.64rem;
   }
 }
 
