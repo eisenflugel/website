@@ -1,7 +1,7 @@
 ## Design Context
 
 ### Users
-Primary users are prospective private charter clients, executive travelers, business decision-makers, assistants, and partners evaluating Eisenflügel Aviation for transportation needs in the United States and Mexico.
+Primary users are prospective corporate flight clients, executive travelers, business decision-makers, assistants, and partners evaluating Eisenflügel Aviation for transportation needs at national and international scale.
 
 They will typically land on the site with low patience and high expectations. The site must let them understand who the company is, what it does, and whether it is credible, refined, and worth contacting. This is an informational website centered on the company manifesto, not a dense product catalog or transactional booking flow.
 
