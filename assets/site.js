@@ -3,17 +3,20 @@
   var storageKey = "eisenflugel-theme";
   var toggle = document.querySelector("[data-theme-toggle]");
   var label = document.querySelector("[data-theme-label]");
+  var icon = document.querySelector("[data-theme-icon]");
   var locale = document.body.getAttribute("data-locale") || "en";
   var prefersDark = window.matchMedia("(prefers-color-scheme: dark)");
   var prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   var labels = {
     en: {
       light: "Light",
-      dark: "Dark"
+      dark: "Dark",
+      button: "Switch color theme"
     },
     es: {
       light: "Claro",
-      dark: "Oscuro"
+      dark: "Oscuro",
+      button: "Cambiar tema de color"
     }
   };
 
@@ -43,13 +46,15 @@
   }
 
   function updateToggle(theme) {
-    if (!toggle || !label) {
+    if (!toggle || !label || !icon) {
       return;
     }
 
     var copy = labels[locale] || labels.en;
     label.textContent = theme === "dark" ? copy.dark : copy.light;
     toggle.setAttribute("aria-pressed", String(theme === "dark"));
+    toggle.setAttribute("aria-label", copy.button + ": " + (theme === "dark" ? copy.dark : copy.light));
+    icon.textContent = theme === "dark" ? "☾" : "☼";
   }
 
   function applyTheme(theme) {

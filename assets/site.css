@@ -162,10 +162,7 @@ button {
 .locale-switch {
   display: inline-flex;
   align-items: center;
-  gap: 0.25rem;
-  padding: 0.2rem;
-  border: 1px solid var(--surface-line);
-  border-radius: 999px;
+  gap: 0.5rem;
 }
 
 .locale-link,
@@ -178,63 +175,56 @@ button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 3rem;
-  min-height: 2.5rem;
-  padding: 0 0.85rem;
-  border-radius: 999px;
   text-decoration: none;
-  letter-spacing: 0.16em;
-  font-size: 0.73rem;
+  letter-spacing: 0.18em;
+  font-size: 0.8rem;
   font-weight: 700;
+  color: var(--text-soft);
 }
 
 .locale-link.is-current {
-  background: var(--bg-strong);
-  color: var(--inverse);
+  color: var(--text);
 }
 
 .theme-toggle {
   display: inline-flex;
   align-items: center;
-  gap: 0.7rem;
-  min-height: 3rem;
-  padding: 0.2rem 0.4rem 0.2rem 0.85rem;
-  border: 1px solid var(--surface-line);
-  border-radius: 999px;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
   background: transparent;
   color: var(--text);
   cursor: pointer;
 }
 
-.theme-toggle-track {
+.theme-toggle-icon {
   display: inline-flex;
   align-items: center;
-  width: 3.2rem;
-  padding: 0.2rem;
-  border-radius: 999px;
-  background: color-mix(in oklch, var(--text), transparent 88%);
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  line-height: 1;
 }
 
-.theme-toggle-thumb {
-  width: 1.2rem;
-  height: 1.2rem;
-  border-radius: 50%;
-  background: var(--bg-strong);
-  transform: translateX(0);
-  transition:
-    transform var(--transition-fast),
-    background-color var(--transition-fast);
+.locale-separator {
+  color: var(--text-soft);
+  font-size: 0.78rem;
 }
 
-:root[data-theme="dark"] .theme-toggle-thumb {
-  transform: translateX(1.45rem);
-}
-
-.theme-toggle-label {
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .hero,
@@ -467,44 +457,21 @@ button {
   .header-controls {
     margin-left: auto;
     flex: 0 0 auto;
-    gap: 0.45rem;
-  }
-
-  .locale-switch {
-    padding: 0.15rem;
+    gap: 0.35rem;
   }
 
   .locale-link {
-    min-width: 2.35rem;
-    min-height: 2rem;
-    padding: 0 0.65rem;
-    font-size: 0.64rem;
+    font-size: 0.7rem;
     letter-spacing: 0.14em;
   }
 
   .theme-toggle {
-    gap: 0.45rem;
-    min-height: 2.35rem;
-    padding: 0.15rem 0.3rem 0.15rem 0.65rem;
+    width: 1.95rem;
+    height: 1.95rem;
   }
 
-  .theme-toggle-track {
-    width: 2.45rem;
-    padding: 0.15rem;
-  }
-
-  .theme-toggle-thumb {
-    width: 0.95rem;
-    height: 0.95rem;
-  }
-
-  :root[data-theme="dark"] .theme-toggle-thumb {
-    transform: translateX(1.15rem);
-  }
-
-  .theme-toggle-label {
-    font-size: 0.68rem;
-    letter-spacing: 0.06em;
+  .theme-toggle-icon {
+    font-size: 0.92rem;
   }
 
   .hero {
@@ -540,16 +507,12 @@ button {
   }
 
   .locale-link {
-    min-width: 2.1rem;
-    padding: 0 0.55rem;
+    font-size: 0.66rem;
   }
 
   .theme-toggle {
-    padding-left: 0.5rem;
-  }
-
-  .theme-toggle-label {
-    font-size: 0.64rem;
+    width: 1.85rem;
+    height: 1.85rem;
   }
 }
 
