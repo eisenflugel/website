@@ -5,7 +5,7 @@ Primary users are prospective corporate flight clients, executive travelers, bus
 
 They will typically land on the site with low patience and high expectations. The site must let them understand who the company is, what it does, and whether it is credible, refined, and worth contacting. This is an informational website centered on the company manifesto, not a dense product catalog or transactional booking flow.
 
-The main job to be done is simple: establish brand trust quickly, communicate the Eisenflügel Aviation point of view with clarity, and direct serious inquiries to `hi@eisenflugel.com`.
+The main job to be done is simple: establish brand trust quickly, communicate the Eisenflügel Aviation point of view with clarity, and direct serious inquiries to `contact@eisenflugel.com`.
 
 ### Brand Personality
 Brand personality: Aesthetics, Ethics, Order.
