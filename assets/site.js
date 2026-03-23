@@ -17,6 +17,11 @@
       light: "Claro",
       dark: "Oscuro",
       button: "Cambiar tema de color"
+    },
+    de: {
+      light: "Hell",
+      dark: "Dunkel",
+      button: "Farbschema wechseln"
     }
   };
 
