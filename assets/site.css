@@ -279,9 +279,20 @@ button {
   text-wrap: balance;
 }
 
-.hero-copy h1 span {
+.hero-copy h1 > span {
   display: block;
   color: var(--text-muted);
+}
+
+.hero-subline {
+  max-width: 11.5ch;
+}
+
+.hero-emphasis {
+  font-size: 0.72em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .hero-lede {
@@ -492,9 +503,15 @@ button {
   }
 
   .hero-copy h1,
+  .hero-subline,
   .section-heading h2,
   .manifesto-item h3 {
     max-width: none;
+  }
+
+  .hero-emphasis {
+    font-size: 0.74em;
+    letter-spacing: 0.06em;
   }
 
   .manifesto-grid {
