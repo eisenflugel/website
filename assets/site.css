@@ -289,10 +289,10 @@ button {
 }
 
 .hero-emphasis {
-  font-size: 0.72em;
+  font-size: 0.84em;
   font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 0.01em;
 }
 
 .hero-lede {
@@ -510,8 +510,7 @@ button {
   }
 
   .hero-emphasis {
-    font-size: 0.74em;
-    letter-spacing: 0.06em;
+    font-size: 0.86em;
   }
 
   .manifesto-grid {
